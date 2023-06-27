@@ -5,6 +5,10 @@ Built a backend project for OneAssure
 
 <img width="397" alt="Screenshot 2023-06-27 231510" src="https://github.com/Shriya-Sonam/oneAssure/assets/86159436/dc61cb3e-4c83-41ca-b1fc-df4dfa108adf">
 
+<img width="348" alt="Screenshot 2023-06-27 231612" src="https://github.com/Shriya-Sonam/oneAssure/assets/86159436/66b330f7-3603-42bf-911c-62d4b64bc5db">
+
+<img width="447" alt="Screenshot 2023-06-27 231624" src="https://github.com/Shriya-Sonam/oneAssure/assets/86159436/52869a15-ddc2-40cb-b6a7-53b3368b1625">
+
 # DELIVERABLES
 1. CSV --> Mongo Db documents
 
