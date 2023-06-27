@@ -13,10 +13,12 @@ Built a backend project for OneAssure
 
 4. creating APIs
      
-    a. i/p --> 
+    a. i/p -->
+   
         sum insured(3L,4L,5L) , city(t1,t2), tenure(1,2,3), [age(0-90)] 
 
-    b. logic -->  
+    b. logic -->
+   
         1. sort the ages desc  (30 , 20 , 10)
    
         2. get the rates for all the ages (query db)
@@ -26,7 +28,7 @@ Built a backend project for OneAssure
    
         4. then return this as premium to the user 
 
-5. Make a frontend repo in html,css,javascript in (VS Code):
+6. Make a frontend repo in html,css,javascript in (VS Code):
    
    a. Install Node.js
    
