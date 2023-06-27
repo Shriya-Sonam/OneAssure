@@ -1,6 +1,11 @@
-# OneAssure
+## OneAssure
 Built a backend project for OneAssure
-## DELIVERABLES
+
+# Screenshots
+
+<img width="397" alt="Screenshot 2023-06-27 231510" src="https://github.com/Shriya-Sonam/oneAssure/assets/86159436/dc61cb3e-4c83-41ca-b1fc-df4dfa108adf">
+
+# DELIVERABLES
 1. CSV --> Mongo Db documents
 
 2. setup a repo to provide rest APIs using flask and mongo 
