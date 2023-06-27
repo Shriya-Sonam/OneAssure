@@ -21,6 +21,20 @@ Built a backend project for OneAssure
             a. total = rate of age1 + rate of age2 50%  + rate of age 3 50% and so on 
         4. then return this as premium to the user 
 
-4. Make a frontend repo in html,css,javascript.
+4. Make a frontend repo in html,css,javascript in (VS Code):
+   a. Install Node.js
+   b. Install the VS Code editor
 
-Steps 
+5. Make the backend in flask using mongodb as the database:
+   a. Install Python
+   b. Install Flask: Run the following command to install Flask:
+      pip install Flask
+   c. Install pymongo:
+      pip install pymongo
+   d. Install Flask-PyMongo: Flask-PyMongo is a Flask extension that simplifies MongoDB integration with Flask. 
+      pip install Flask-PyMongo
+   e. Install MongoDB
+   f. Connect Flask to MongoDB
+   
+
+
