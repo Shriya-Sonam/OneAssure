@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insurance Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    select,
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Insurance Form</h1>
+  <form method="POST" action="/">
+    <label for="sumInsured">Sum Insured:</label>
+    <select id="sumInsured" name="sumInsured">
+      <option value="500000">5 Lakh</option>
+      <option value="400000">4 Lakh</option>
+      <option value="300000">3 Lakh</option>
+    </select>
+
+    <label for="city">City:</label>
+    <select id="city" name="tier">
+      <option value="1">Tier 1</option>
+      <option value="2">Tier 2</option>
+    </select>
+
+    <label for="tenure">Tenure:</label>
+    <select id="tenure" name="tenure">
+      <option value="1">1 year</option>
+      <option value="2">2 years</option>
+      <option value="3">3 years</option>
+    </select>
+
+    <label for="noOfPeople">Number of People:</label>
+    <input type="number" id="noOfPeople" name="numOfPerson" min="1" />
+
+    <div id="agesContainer"></div>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <script>
+    const noOfPeopleInput = document.getElementById("noOfPeople");
+    const agesContainer = document.getElementById("agesContainer");
+
+    noOfPeopleInput.addEventListener("input", createAgeInputs);
+
+    function createAgeInputs() {
+      const noOfPeople = parseInt(noOfPeopleInput.value);
+      agesContainer.innerHTML = "";
+
+      for (let i = 1; i <= noOfPeople; i++) {
+        const ageLabel = document.createElement("label");
+        ageLabel.textContent = `Age of Person ${i}:`;
+        const ageInput = document.createElement("input");
+        ageInput.type = "number";
+        ageInput.name = "age"+i
+        ageInput.min = "1";
+
+        agesContainer.appendChild(ageLabel);
+        agesContainer.appendChild(ageInput);
+      }
+    }
+  </script>
+</body>
+</html>
